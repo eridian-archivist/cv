@@ -1,0 +1,341 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Michelle Shannon CV</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="">
+   
+   <!--Montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
+  </head>
+  <body>   
+    <section>
+      
+      <!-- MOBILE NAVIGATION -->
+      <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
+        <a href="index.html" class="w3-bar-item w3-button w3-hover-none">Home</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNavigation()">&#9776;</a>
+      </div>
+      
+      <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
+        <a href="#About" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-blue w3-hover-text-gray" onclick="toggleNavigation()">About</a>
+        <a href="#Education" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-blue w3-hover-text-gray" onclick="toggleNavigation()">Education</a>
+        <a href="#Experience" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-blue w3-hover-text-gray" onclick="toggleNavigation()">Experience</a>
+        <a href="#Presentations" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-blue w3-hover-text-gray" onclick="toggleNavigation()">Presentations</a>
+        <a href="#Publications" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-blue w3-hover-text-gray" onclick="toggleNavigation()">Publications</a>
+        <a href="#Funding" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-blue w3-hover-text-gray" onclick="toggleNavigation()">Funding</a>
+        <a href="#Service" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-blue w3-hover-text-gray" onclick="toggleNavigation()">Service</a>
+        <a href="#Recognition" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-blue w3-hover-text-gray" onclick="toggleNavigation()">Recognition</a>
+      </div>
+
+      <!-- Sidebar -->
+      <section class="image-section w3-quarter w3-fixed w3-padding-small">
+        
+        <!--IMAGE/AVATAR-->
+        <img src="MichelleShannon_20230510-6.jpg" class="w3-circle w3-border w3-border-blue" style="border-width: 3px !important;"/>
+        
+        <!--NAME-->
+        <div>
+          <h4>Michelle Shannon</h4>
+          <h5><i>Digital Library Professional</i></h5>
+        </div>
+        
+        <!--Side nav menu-->
+        <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
+          <p><a href="#About" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-blue w3-hover-text-gray w3-center w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">About</a></p>
+          <p><a href="#Education" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-blue w3-hover-text-gray w3-center w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">Education</a></p>
+          <p><a href="#Experience" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-blue w3-hover-text-gray w3-center w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">Experience</a></p>
+          <p><a href="#Presentations" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-blue w3-hover-text-gray w3-center w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">Presentations</a></p>
+          <p><a href="#Publications" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-blue w3-hover-text-gray w3-center w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">Publications</a></p>
+          <p><a href="#Funding" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-blue w3-hover-text-gray w3-center w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">Funding</a></p>
+          <p><a href="#Service" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-blue w3-hover-text-gray w3-center w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">Service</a></p>
+          <p><a href="#Recognition" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-blue w3-hover-text-gray w3-center w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">Recognition</a></p>
+        </div>
+        <div class="content-container w3-margin-top-2">
+      </section>
+
+      <!--CV CONTENT SECTION-->
+      <section class="w3-threequarter w3-padding-large w3-right">
+        <!--DESKTOP NAVIGATION-->
+        <div class="content-container w3-margin-top-2">
+
+          <!--ABOUT SECTION-->
+          <div id="About" class="w3-container w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-blue" style="border-width: 3px !important;">About</h2>
+            <p class="w3-margin-top-2">
+            Hi, I'm Michelle! Since 2018, I've used my blended background in humanities and technology to make historical and research collections publicly available and discoverable to users across the globe with as few barriers to access and use as possible. My brain gets really excited when facing a new challenge, allowing me to come up with innovative and streamlined solutions to digital library problems.
+            </p>
+            <p class=""> 
+              My specialty areas:
+                <ul>
+                  <li>digital collections, archives, and repositories</li>
+                  <li>special collections and archives</li>
+                  <li>scholarly communication</li>
+                  <li>PowerShell and Ubuntu command lines</li>
+                  <li>static web development</li>
+                  <li>Git, GitHub, and GitHub Desktop</li>
+                </ul>
+                
+                <p class="">
+                Areas I'm actively exploring:
+                  <ul>
+                    <li>Python scripting</li>
+                    <li>digital preservation best practices</li>
+                  </ul>
+            </p>
+          </div>
+          
+          <!--EDUCATION SECTION-->
+          <div id="Education" class="w3-container w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-blue" style="border-width: 3px !important;">Education</h2>
+            <h3>University of Wisconsin-Milwaukee</h3>
+            <p class="w3-margin-top-1"> 
+              Master of Library and Information Science
+            </p>
+            <h3>Western Washington University</h3>
+            <p class="w3-margin-top-1"> 
+              Master of Arts in History<br>
+              Graduate Certificate in Archives & Records Management<br>
+              Bachelor of Arts in History/Social Studies
+            </p>
+          </div>
+          
+          <!--EXPERIENCE SECTION-->
+          <div id="Experience" class="w3-container w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-blue" style="border-width: 3px !important;">Experience</h2>
+            <h3>Institutional Repository Manager</h3>
+            <p class="w3-margin-top-1">
+              Apr 2023-present<br>
+              University of Nevada, Las Vegas Libraries<br>
+              Scholarly Communication & Data Services Department
+              
+            </p>
+            <h3>Institutional Repository Technician</h3>
+            <p class="w3-margin-top-1"> 
+              Sep 2021 - Mar 2023<br>
+              University of Nevada, Las Vegas Libraries<br>
+              Scholarly Communication & Data Services Department
+            </p>
+            <h3>Archival Assistant</h3>
+            <p class="w3-margin-top-1"> 
+              Jun 2019 - Sep 2021<br>
+              University of Idaho Library<br>
+              Special Collections & Archives Department<br>
+            </p>
+            <h3>Special Collections Intern (part-time)</h3>
+            <p class="w3-margin-top-1">
+               Mar 2019 - Jun 2019<br>
+               Western Washington University Libraries<br>
+               Special Collections Department
+            </p>
+            <h3>Archives Intern (part-time)</h3>
+            <p class="w3-margin-top-1">
+               Sep 2018 - Mar 2019<br>
+               Washington State Archives<br>
+               Northwest Regional Branch
+            </p>
+            <h3>Visual Materials Intern (part-time)</h3>
+            <p class="w3-margin-top-1">
+               Jun 2018 - Aug 2018<br>
+               University of Washington Libraries<br>
+               Special Collections & Archives Department
+            </p>
+          </div>
+          
+          <!--PRESENTATION SECTION-->
+          <div id="Presentations" class="w3-container w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-blue" style="border-width: 3px !important;">Presentations</h2>
+            <p class="w3-margin-top-2"> 
+              <ul>
+                <li><b>Shannon, M.</b> (2026). "Electronic Theses and Dissertations at UNLV: Repository Workflows and Policies." U.S. Repository Network Community Conversation.</li>
+                <li><b>Shannon, M.</b> & Garcia-Trujillo, B. (2026). "Rebranding a 16-Year-Old IR: A Case Study." Southern Miss Institutional Repository Conference.</li>
+                <li><b>Shannon, M.</b> & Berge, C. (2020). "Addressing the Backlog: Prioritizing Archival Accessions." Idaho Library Association Conference.</li>
+              </ul>
+            </p>
+          </div>
+          <div id="about" class="w3-container w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-blue" style="border-width: 3px !important;">Workshops & Teaching</h2>
+            <p class="w3-margin-top-2"> 
+              <ul>
+                <li><b>Shannon, M.</b> & Garcia-Trujillo, B. (2026). "The Thesis/Dissertation Submission Process: A Guide." University of Nevada, Las Vegas.</li>
+                <li><b>Shannon, M.</b> & Garcia-Trujillo, B. (2025). "The Thesis/Dissertation Submission Process: A Guide." University of Nevada, Las Vegas.</li>
+                <li><b>Shannon, M.</b> (2024). "Submitting Your Thesis or Dissertation to the University Libraries." University of Nevada, Las Vegas.</li>
+                <li><b>Shannon, M.</b> (2023). "Submitting Your Thesis or Dissertation." University of Nevada, Las Vegas.</li>
+                <li>Koziura, A., Miskey, C., & <b>Shannon, M.</b> (2023). "Build Your Unique Brand." Rebel Ready Week, University of Nevada, Las Vegas.</li>
+                <li>Wirth, A. & <b>Shannon, M.</b> (2022). "The Impactful Thesis: Making Your Thesis or Dissertation Open Access." Research Impact Week, University of Nevada, Las Vegas.</li>
+                <li>Thompson, A., Berge, C., & <b>Shannon, M.</b> (2020). "Introduction to Archives." Dual Credit Summer Institute, University of Idaho Library.</li>
+                <li><b>Shannon, M.</b> (2020). "Historian as Archivist." HIST 290 class, University of Idaho.</li>
+                <li>Thompson, A., Berge, C. & <b>Shannon, M.</b> (2020). "Introduction to Archives." ISTEM 301 class, University of Idaho.</li>
+              </ul>
+            </p>
+          </div>
+          
+          <!--PUBLICATIONS SECTION-->
+          <div id="Publications" class="w3-container w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-blue" style="border-width: 3px !important;">Publications</h2>
+            <p class="w3-margin-top-2"> 
+              <ul>
+               <li>Perret, R., <b>Shannon, M.</b>, Thompson, A., Berge, C. & Becker, D. (2023). "<a href="https://digitalcommons.usu.edu/westernarchives/vol14/iss1/12/">Reaping the Harvest: Developing the Idaho Harvester</a>." Journal of Western Archives, 14(1).</li>
+               <li>Berge, C. & <b>Shannon, M.</b> (2020). "<a href="https://arc.lib.montana.edu/ojs/index.php/pnla/issue/view/44">Addressing the Backlog: Prioritizing Archival Accessions</a>." Pacific Northwest Library Association Quarterly, Winter 2020.</li>
+              </ul>
+            </p>
+          </div>
+          <div id="about" class="w3-container w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-blue" style="border-width: 3px !important;">Archival Exhibits</h2>
+            <p class="w3-margin-top-2"> 
+              <ul>
+                <li><b>Shannon, M.</b> (2019-2021). <a href="https://harvester.lib.uidaho.edu/contributors/michelleshannon.html">Idaho Harvester digital exhibits and blog posts</a>. University of Idaho Library.</li>
+                <li><b>Shannon, M.</b> (2021). "<a href="https://harvester.lib.uidaho.edu/posts/2021/04/26/asian-american-pacific-islander-heritage-month-display.html">Asian American & Pacific Islander Heritage Month Display</a>." University of Idaho Library.</li>
+                <li><b>Shannon, M.</b> (2020). "<a href="https://harvester.lib.uidaho.edu/posts/2021/03/05/womens-history-month-exhibit.html">Women's History Month Exhibit</a>." University of Idaho Library.</li>
+                <li>Berge, C. & <b>Shannon, M.</b> (2020). "Lionel Hampton: The Energetic Performer." University of Idaho Lionel Hampton School of Music.</li>
+              </ul>
+            </p>
+          </div>
+          <div id="about" class="w3-container w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-blue" style="border-width: 3px !important;">Archival Finding Aids</h2>
+            <p class="w3-margin-top-2"> 
+              <ul>
+                <li><b>Shannon, M.</b> (2021). <a href="https://archiveswest.orbiscascade.org/ark:80444/xv929534">Hays Family Papers, 1808-1989</a>. Archives West. University of Idaho.</li>
+                <li><b>Shannon, M.</b> (2021). <a href="https://archiveswest.orbiscascade.org/ark:80444/xv644550">University of Idaho Personnel Vertical File, 1889-present</a>. Archives West. University of Idaho.</li>
+                <li><b>Shannon, M.</b> & Kerr, R. (2021). <a href="https://archiveswest.orbiscascade.org/ark:80444/xv73938">Raymond L. Proctor Papers, 1925-1986</a>. Archives West. University of Idaho.</li>
+                </li><b>Shannon, M.</b> (ed.) (2020). <a href="https://archiveswest.orbiscascade.org/ark:80444/xv54043">Lily Wai Committee Papers, 1981-1990</a>. Archives West. University of Idaho.</li>
+                <li><b>Shannon, M.</b> (2020). <a href="https://archiveswest.orbiscascade.org/ark:80444/xv969511">Carleton E. Watkins Photographs, 1890</a>. Archives West. University of Idaho.</li>
+                <li><b>Shannon, M.</b> (2020). <a href="https://archiveswest.orbiscascade.org/ark:80444/xv699340">John Miller 'Trees Grew Tall' Photographs, 1898-1943</a>. Archives West. University of Idaho.</li>
+                <li><b>Shannon, M.</b> (2020). <a href="https://archiveswest.orbiscascade.org/ark:80444/xv826569">University of Idaho Publications Department Negatives, 1958-1975</a>. Archives West. University of Idaho.</li>
+                <li><b>Shannon, M.</b> (2020). <a href="https://archiveswest.orbiscascade.org/ark:80444/xv258539">Roy A. Bell Photographs II, 1946-1966</a>. Archives West. University of Idaho.</li>
+                <li><b>Shannon, M.</b> (2020). <a href="https://archiveswest.orbiscascade.org/ark:80444/xv370329">Roy A. Bell Photographs, 1950-1970</a>. Archives West. University of Idaho.</li>
+                <li><b>Shannon, M.</b> (2020). <a href="https://archiveswest.orbiscascade.org/ark:80444/xv528867">Union Pacific Railroad Bridges Photograph Collection, 1894, undated</a>. Archives West. University of Idaho.</li>
+                <li><b>Shannon, M.</b> (2020). <a href="https://archiveswest.orbiscascade.org/ark:80444/xv391124">University of Idaho Mounted Photographs, 1903-1907</a>. Archives West. University of Idaho.</li>
+                <li><b>Shannon, M.</b> (2020). <a href="https://archiveswest.orbiscascade.org/ark:80444/xv74492">Lewis and Clark Illustrated Talk Photograph Collection, 1961-1965</a>. Archives West. University of Idaho.</li>
+                <li><b>Shannon, M.</b> (2020). <a href="https://archiveswest.orbiscascade.org/ark:80444/xv880175">Earl Elstone Photograph Collection, 1925-1927, undated</a>. Archives West. University of Idaho.</li>
+                <li><b>Shannon, M.</b> (2020). <a href="https://archiveswest.orbiscascade.org/ark:80444/xv716367">John B. Miller Photographs, 1903-1918</a>. Archives West. University of Idaho.</li>
+                <li><b>Shannon, M.</b> (2020). <a href="https://archiveswest.orbiscascade.org/ark:80444/xv695094">University of Idaho Photographs, 1939, undated</a>. Archives West. University of Idaho.</li>
+                <li><b>Shannon, M.</b> (2020). <a href="https://archiveswest.orbiscascade.org/ark:80444/xv473507">Oren A. Fitzgerald Photographs, circa 1955</a>. Archives West. University of Idaho.</li>
+                <li><b>Shannon, M.</b> (2020). <a href="https://archiveswest.orbiscascade.org/ark:80444/xv102444">Arthur C. Hope Photographs, 1939-1940</a>. Archives West. University of Idaho.</li>
+                <li><b>Shannon, M.</b> (2020). <a href="https://archiveswest.orbiscascade.org/ark:80444/xv156507">Frank Hess/Barnard Photographs, undated</a>. Archives West. University of Idaho.</li>
+                <li><b>Shannon, M.</b> (2020). <a href="https://archiveswest.orbiscascade.org/ark:80444/xv252366">Albert J. Ohlson Photographs, 1944-1945</a>. Archives West. University of Idaho.</li>
+                <li><b>Shannon, M.</b> (2020). <a href="https://archiveswest.orbiscascade.org/ark:80444/xv895840">University of Idaho Glass Plate Negatives, 1893-1920s</a>. Archives West. University of Idaho.</li>
+                <li><b>Shannon, M.</b> (2020). <a href="https://archiveswest.orbiscascade.org/ark:80444/xv884132">University of Idaho Theatre Arts Photographs, 1920-1976</a>. Archives West. University of Idaho.</li>
+                <li><b>Shannon, M.</b> (2020). <a href="https://archiveswest.orbiscascade.org/ark:80444/xv323028">Bunker Hill Negatives, 1908-1937, undated</a>. Archives West. University of Idaho.</li>
+                <li><b>Shannon, M.</b> (2020). <a href="https://archiveswest.orbiscascade.org/ark:80444/xv389150">Thomas Byron (T.B.) Keith Photograph Collection, 1831, 1890-1975</a>. Archives West. University of Idaho.</li>
+                <li><b>Shannon, M.</b> (2020). <a href="https://archiveswest.orbiscascade.org/ark:80444/xv715430">Paragon Mining Company Scrapbook, undated</a>. Archives West. University of Idaho.</li>
+                <li><b>Shannon, M.</b> (2020). <a href="https://archiveswest.orbiscascade.org/ark:80444/xv474809">Photographs of Theodore Roosevelt at University of Idaho, 1911</a>. Archives West. University of Idaho.</li>
+                <li><b>Shannon, M.</b> (2020). <a href="https://archiveswest.orbiscascade.org/ark:80444/xv413092">Sandpoint Research and Extension Center Photographs, undated</a>. Archives West. University of Idaho.</li>
+                <li><b>Shannon, M.</b> (2020). <a href="https://archiveswest.orbiscascade.org/ark:80444/xv441404">Eaton Family Photograph Album, circa 1910</a>. Archives West. University of Idaho.</li>
+                <li><b>Shannon, M.</b> (2020). <a href="https://archiveswest.orbiscascade.org/ark:80444/xv928424">Unidentified Family Album, 1920-1939</a>. Archives West. University of Idaho.</li>
+                <li><b>Shannon, M.</b> (2020). <a href="https://archiveswest.orbiscascade.org/ark:80444/xv876568">Ott-Hodgins Photograph Collection, 1900s</a>. Archives West. University of Idaho.</li>
+                <li><b>Shannon, M.</b> (2020). <a href="https://archiveswest.orbiscascade.org/ark:80444/xv368583">University of Idaho Photographic Slides, 1950-1954</a>. Archives West. University of Idaho.</li>
+                <li><b>Shannon, M.</b> (2020). <a href="https://archiveswest.orbiscascade.org/ark:80444/xv46323">Photographs of Idaho Scenes, 1896-1950s</a>. Archives West. University of Idaho.</li>
+                <li><b>Shannon, M.</b> (2020). <a href="https://archiveswest.orbiscascade.org/ark:80444/xv712945">University of Idaho College of Agriculture Photographs, 1952-1980</a>. Archives West. University of Idaho.</li>
+                <li><b>Shannon, M.</b> (2020). <a href="https://archiveswest.orbiscascade.org/ark:80444/xv514139">University of Idaho Library Photographs, 1954-1994</a>. Archives West. University of Idaho.</li>
+                <li><b>Shannon, M.</b> (2020). <a href="https://archiveswest.orbiscascade.org/ark:80444/xv267928">Constance Talbott and A.B. Hatch Photographs, 1924-1949</a>. Archives West. University of Idaho.</li>
+                <li><b>Shannon, M.</b> (2020). <a href="https://archiveswest.orbiscascade.org/ark:80444/xv882414">William Allen Stonebraker Photograph Collection, 1900-1931</a>. Archives West. University of Idaho.</li>
+                <li><b>Shannon, M.</b> (2020). <a href="https://archiveswest.orbiscascade.org/ark:80444/xv119445">Priest Lake Museum Association Photographs, 1880-1950</a>. Archives West. University of Idaho.</li>
+                <li><b>Shannon, M.</b> (2020). <a href="https://archiveswest.orbiscascade.org/ark:80444/xv196983">Photographs of Wallace, Idaho, 1910-1920</a>. Archives West. University of Idaho.</li>
+                <li><b>Shannon, M.</b> (2020). <a href="https://archiveswest.orbiscascade.org/ark:80444/xv270021">University of Idaho Homecoming Photographs, 1968</a>. Archives West. University of Idaho.</li>
+                <li><b>Shannon, M.</b> (2020). <a href="https://archiveswest.orbiscascade.org/ark:80444/xv87077">University of Idaho Department of Civil Engineering Photograph Collection, 1926-1938</a>. Archives West. University of Idaho.</li>
+                <li><b>Shannon, M.</b> (2020). <a href="https://archiveswest.orbiscascade.org/ark:80444/xv816252">John B. Wilson Studio Photographs Collection, circa 1915, undated</a>. Archives West. University of Idaho.</li>
+                <li><b>Shannon, M.</b> (2020). <a href="https://archiveswest.orbiscascade.org/ark:80444/xv405425">Ron V. Nixon Photographs, 1889-1980s</a>. Archives West. University of Idaho.</li>
+                <li><b>Shannon, M.</b> (2020). <a href="https://archiveswest.orbiscascade.org/ark:80444/xv210754">John Fahey 'Hercules' Collection, 1888-1925</a>. Archives West. University of Idaho.</li>
+                <li><b>Shannon, M.</b> (2020). <a href="https://archiveswest.orbiscascade.org/ark:80444/xv419585">Crabtree Lithic Technology Collection, 1860-2014</a>. Archives West. University of Idaho.</li>
+                <li><b>Shannon, M.</b> (2020). <a href="https://archiveswest.orbiscascade.org/ark:80444/xv152953">University of Idaho Women's Recreation Association Photographs, 1920s-1970s</a>. Archives West. University of Idaho.</li>
+                <li><b>Shannon, M.</b> & Cleere, H. (2019). <a href="https://archiveswest.orbiscascade.org/ark:80444/xv621825">Union Warehouse and Mercantile Co. (Craigmont Grange Supply Co.) Records, 1918-1993</a>. Archives West. University of Idaho.</li>
+                <li><b>Shannon, M.</b> & Cleere, H. (2019). <a href="https://archiveswest.orbiscascade.org/ark:80444/xv217712">Sunshine Mining Company Records, 1918-1990</a>. Archives West. University of Idaho.</li>
+                <li><b>Shannon, M.</b> & Cleere, H. (2019). <a href="https://archiveswest.orbiscascade.org/ark:80444/xv298888">Thomas Consolidated Mines, Inc. and New Rainbow Mining Co. Records, 1903-1982</a>. Archives West. University of Idaho.</li>
+                <li><b>Shannon, M.</b> (2019). <a href="https://archiveswest.orbiscascade.org/ark:80444/xv609404">Frank Schumaker Manuscript, 1968-1977.</a> Archives West. University of Idaho.</li>
+              </ul>
+            </p>
+          </div>
+          
+          <!--FUNDING SECTION-->
+          <div id="Funding" class="w3-container w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-blue" style="border-width: 3px !important;">Total funding: $25,096.00 USD</h2>
+            <h3>Publishing Matters: A Lunch & Learn Series on the Art and Ethics of Scholarly Publishing, $3,000 (2025)</h3>
+            <p class="w3-margin-top-1"> 
+              Funding goes toward a series of three Lunch & Learn events that explore, discuss, and prmote high quality publishing for an audience of faculty and graduate student authors, peer reviewers, and editors.
+            </p>
+            <p>
+                <i>Finley, P., Skarl, S., Shannon, M. & Wirth, A. (2025). Publishing Matters: A Lunch & Learn Series on the Art and Ethics of Scholarly Publishing. UNLV University Libraries Faculty Development Fund. Amount awarded: $3,000.00 USD</i>
+            </p>
+            <h3>Improving Accessibility and Discoerability of Multimedia Files in Digital Scholarship@UNLV, $4,775 (2023)</h3>
+            <p class="w3-margin-top-1">
+                This project seeks to improve accessibility and online discovery of existing multimedia content in the institutional repository, Digital Scholarship@UNLV. The repository holds over 30,000 records, most of which are text-based. Approximately 600 records include video or audio as the primary file, many of which do not include captions or transcripts and some of which have limitations which result in less access and use of the content. We will hire a UNLV graduate student to 1) research and identify appropriate technology to create transcripts and closed captions 2) utilize the selected technology on a subset of our files 3) review the selected files for missing metadata and issues with video or audio file playback, and 4) update the records with captions, transcripts, and metadata to meet current metadata and multimedia accessibility standards. Documentation will also be a key piece of this project so the department can continue these efforts once the student has completed their work. This project will positively impact users by making multimedia content more accessible and useful to a larger audience by removing barriers to access and use (including a lack of captions or transcripts).
+            </p>
+            <p>
+                <i>Wirth, A., Frederick, W., Shannon, M. & Koziura, A. (2023). Improving Accessibility and Discovery of Multimedia Files in Digital Scholarship@UNLV. UNLV University Libraries Dean's Leadership Circle. Amount awarded: $4,775.00 USD</i>
+            </p>
+            <h3>Unheard Voices: Digitizing the Oral Histories of Underrepresented Communities in Idaho, $17,321 (2022)</h3>
+            <p class="w3-margin-top-1">
+                The University of Idaho Library, Special Collections and Archives Department proposes to digitize, preserve, and make accessible approximately 201 hours of first-hand oral history interviews that document the experiences of Chinese Americans, Filipino Americans, Hispanic Americans, Japanese Americans, and rural women living in Idaho in the 20th century. These interviews currently exist on legacy media formats and include 40 audiovisual U-Matic tapes, 4 audiovisual VHS tapes, 64 open-reel audio tapes, and 64 audio cassette tapes. Once digitized, we will hire a student worker to create item-level descriptive metadata, digitize print transcripts and corresponding print material, and add the digitized files and metadata to our digital collections. These interviews offer a unique and important perspective on the experiences of minority communities living in a predominantly white and rural state throughout the 20th century. This digitiziation project will allow these voices to speak to us again.
+            </p>
+            <p>
+                <i>Perret, R., Thompson, A., Shannon, M. & Berge, C. (2022). Unheard Voices: Digitizing the Oral Histories of Underrepresented Communities in Idaho. CLIR: Recordings at Risk. Amount awarded: $17,321.00 USD</i>
+            </p>
+          </div>
+          
+          <!--SERVICE SECTION-->
+          <div id="Service" class="w3-container w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-blue" style="border-width: 3px !important;">Service</h2>
+            <p class="w3-margin-top-1"> 
+              <ul>
+                <li>Member, LibGuide Accessibility Task Force, University of Nevada, Las Vegas Libraries, 2025-present</li>
+                <li>Member, Administrative Faculty Community Service/Engagement Subcommittee, 2025-present</li>
+                <li>Member, Archives West Standing Group, 2020-2021</li>
+                <li>Member, Archives West Server Test Committee, 2020</li>
+                <li>Co-Chair, Diversity, Equity, and Inclusion Committee, University of Idaho Library, 2020-2021</li>
+                <li>Member, Diversity, Equity, and Inclusion Task Force, 2020</li>
+                <li>Member, Library Student Award Committee, 2020</li>
+                <li>Member, Library Social Organization, 2019-2021</li>
+              </ul>
+            </p>
+          </div>
+          
+          <!--RECOGNITION SECTION-->
+          <div id="Recognition" class="w3-container w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-blue" style="border-width: 3px !important;">Recognition</h2>
+            <p class="w3-margin-top-1"> 
+              <ul>
+                <li>Nominee, Innovative Solutions and Customer Service Award, University of Nevada, Las Vegas Libraries, 2025</li>
+                <li>Recipient, Bobbe Allen Scholarship Award, University of Nevada, Las Vegas Libraries, 2024</li>
+                <li>Recipient, Classified Staff Employee of the Month, University of Nevada, Las Vegas, April 2023</li>
+                <li>Nominee, Classified Staff Rookie of the Year, University of Nevada, Las Vegas, 2022</li>
+                <li>Recipient, Graduation with Distinction, Western Washington University, 2017</li>
+              </ul>
+            </p>
+          </div>
+
+        <!--FOOTER-->
+        <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+        <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
+          <p>© 2026 - Michelle Shannon</p>
+          <a class="w3-button w3-round-xxlarge w3-small w3-light-grey" href="mailto:michelle.shannon@unlv.edu" target="_blank">Contact</a> 
+        <!-- End footer -->
+        </footer>
+
+        <!--END OF CV SECTION-->
+      </section>      
+    </section>
+    <script>
+      // Function to toggle mobile navigation
+      function toggleNavigation() {
+        let nav = document.getElementById("mobile-nav");
+        if (nav.classList.contains('w3-show')) {
+          nav.classList.remove('w3-show');
+        } else { 
+          nav.classList.add('w3-show');
+        }
+      }
+    </script>
+    <script>
+      // Script to load feather icons
+      feather.replace()
+    </script>
+  </body>
+</html>
