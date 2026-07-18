@@ -40,6 +40,18 @@ body * {
     margin-top: 50px !important;
     object-fit: cover;
   }
+
+/* Remove visible border from sidebar nav links at rest */
+.image-section a.w3-button,
+#mobile-nav a.w3-bar-item {
+  border-bottom: none !important;
+}
+
+/* Keep hover border effect */
+.image-section a.w3-button:hover,
+#mobile-nav a.w3-bar-item:hover {
+  border-bottom: 2px solid #2196F3 !important; /* Matches W3.CSS blue */
+}
   
   .links {
     display: flex;
